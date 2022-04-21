@@ -1,0 +1,29 @@
+- var pageTitle = 'Cinema Channel'
+
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+    style
+      include styles/normilize.css 
+      include styles/style.css
+  body
+    include modules/header
+
+    section.section-banner
+      img(src="images/banner.png", alt="banner").section-banner__image
+      .container
+        .banner
+          h1.banner_title Zack Snyder's Justice League
+          .banner-info
+            span.banner-info__year 2021
+            span.banner-info__age 18+
+            span.banner-info__time 4h 2min
+            span.banner-info__rating 8.8
+          p.banner_text Determined to ensure Superman's ultimate sacrifice was not in vain. Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions.
+          .banner-control 
+            button.banner-control__btn.banner-control__btn-main Watch 
+            button.banner-control__btn.banner-control__btn-more More info  
+
+
+    include modules/footer
